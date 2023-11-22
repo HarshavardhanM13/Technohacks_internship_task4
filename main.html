@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - HV</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/f59e120cf3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" alt="Logo">
+                <ul id="navbar">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closenav()"></i>
+                </ul>
+               <i class="fa-solid fa-bars" onclick="opennav()"></i>
+            </nav>
+            <div class="header_profile">
+                <p>Backend Coder</p>
+                <h1>Hi, I'm Harshavardhan Murugesan</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <h1 class="subtitle">About Me</h1>
+            <div class="row">
+                <div class="col1">
+                    <img src="HvProfile.jpeg" alt="col1 text">
+                </div>
+                <div class="col2">
+                    <p> Hello, I'm Harshavardhan. I bring a blend of Backend Coding with database management  and a passion for work in the tech companies . I am confident in my ability to give the best with my intelligence.</p>
+                    <div class="about_features">
+                        <p class="features onfeature" onclick="openfeature('Skills')">Skills</p>
+                        <p class="features" onclick="openfeature('Experience')">Experience</p>
+                        <p class="features" onclick="openfeature('Education')">Education</p>
+                    </div>
+                    <div class="featuresContent onContent" id="Skills">
+                        <ul>
+                            <li><span>Javascript</span><br>Client side Scripting</li>
+                            <li><span>PHP</span><br>Server side Scripting</li>
+                            <li><span>Python</span><br>AI/ML</li>
+                        </ul>
+                    </div>
+                    <div class="featuresContent" id="Experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Internship at technohacks</li>
+                            <li><span>AI/ML</span><br>Webinar at PS</li>
+                            <li><span>Notes Web App </span><br> for KCE Coimbatore</li>
+                        </ul>
+                    </div>
+                    <div class="featuresContent" id="Education">
+                        <ul>
+                            <li><span>CS</span><br>KCE Coimbatore </li>
+                            <li><span>School</span><br>Sowdambikaa institutions</li>
+                            <li><span>Python</span><br>Simplilearn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="myServices">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend Coding</h2>
+                    <p> I have very prior knowledge in the Backend
+                        web coding, as i know the very powerful frameworks for 
+                        Backend, it is easy for me to develop any web application 
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <h2>Web Development</h2>
+                    <p> In the field of Web Development, I am one of the skilled person.
+                        I can able to develop an Web Application with user friendly and very 
+                    effective manner  </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Connection</h2>
+                    <p>In the context of Database i have knowledge in SQL and i can 
+                        capable of doing all sort of things that related to SQL 
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+             <h1>My Work</h1>
+             <div class="works">
+                 <div class="work">
+                     <img src="w1.jpeg" alt="work1">
+                     <div class="description">
+                         <h3>Backend Coding</h3>
+                         <p>Description 1</p>
+                     </div>
+                 </div>
+                 <div class="work">
+                     <img src="w2.jpeg" alt="work2"> <div class="description">
+                         <h3>Web Development</h3>
+                         <p>Description 1</p>
+                        
+                     </div>
+                 </div>
+                 <div class="work">
+                     <img src="w3.jpeg" alt="work3">
+                      <div class="description">
+                         <h3>Database Connection</h3>
+                         <p>Description 1</p>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <h1 class="subtitle">Contact Me</h1>
+            <div class="row">
+                <div class="con-left">
+                    <p>vivoharsha139@gmail.com</p>
+                    <p>9944675028</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/harsha-vardhan-60934a279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    </div> 
+                    <a href="#" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="con-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="email" required>
+                        <textarea placeholder="Message" row="6"></textarea>
+                        <button class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
